@@ -1,0 +1,20 @@
+{
+  "name": "cypress_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:ui": "cypress open --browser firefox:dev --e2e",
+    "test:headless": "cypress run",
+    "test:headless:firefox": "cypress run --browser firefox:dev --spec cypress/e2e/test-backend",
+    "run:server": "json-server --watch db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.4.0",
+    "json-server": "^0.17.1",
+    "prettier": "^2.8.3"
+  }
+}
